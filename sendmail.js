@@ -21,6 +21,12 @@ function sendMail() {
 
   emailjs.send("service_aje3frd","template_kxzmr18",params).then(function(res){
     alert("Sucess!"+ res.status);
+    document.getElementById("name").value = "";
+    document.getElementById("sub").value = "";
+    document.getElementById("input_email").value = "";
+    document.getElementById("msg").value = "";
+    // Clear the error message, if any
+    error_msg.innerHTML = "";
    
     })
 
