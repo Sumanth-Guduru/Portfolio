@@ -24,6 +24,15 @@
 
     <link rel="stylesheet" type="text/css" href="default.css" />
     <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <script src="sendmail.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("TNjGjxwa7L16LcRbl");
+})();
+</script>
   </head>
   <body>
     <section class="s1">
@@ -263,22 +272,8 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendMail() {
-      Email.send({
-        SecureToken: "2227ca89-27c1-4d8c-b045-5c62c3cfa727",
-        Port: 25,
-        To: "gudurusumanthwgl@gmail.com",
-        From: document.getElementById("input_email").value,
-        Subject: document.getElementById("sub").value,
-        Body: document.getElementById("msg").value,
-      }).then((message) => alert("Message Sent Successfully!!"));
-      var form = document.getElementById("contact-form");
+  
 
-      error_msg.innerHTML = "";
-      document.getElementById("contact-form").reset();
-    }
-  </script>
   <script>
     let theme = localStorage.getItem("theme");
 
