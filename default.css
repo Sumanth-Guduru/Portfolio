@@ -146,6 +146,7 @@ background-color: #2ACA3E;
 	height:250px;
 	object-fit: cover;
 	border:2px solid var(--borderColor);
+	border-radius:50%;
 }
 .theme-dot{
 	height: 30px;
