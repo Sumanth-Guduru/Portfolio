@@ -142,7 +142,7 @@ background-color: #2ACA3E;
 	display: block;
 	margin: 0 auto;
 
-	width: 250px;
+	width: 200px;
 	height:250px;
 	object-fit: cover;
 	border:2px solid var(--borderColor);
